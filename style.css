@@ -158,9 +158,9 @@ body {
         }
 
         .catalog-search::-webkit-input-placeholder {font-family: 'OpenSans-Regular'; font-size: 10px; letter-spacing: 2.5px; color: #000000} 
-        .catalog-search::-moz-placeholder          {font-family: 'OpenSans-Regular'; font-size: 15px; padding-left: 25px; color: #afafaf}
-        .catalog-search:-moz-placeholder           {font-family: 'OpenSans-Regular'; font-size: 15px; padding-left: 25px; color: #afafaf}
-        .catalog-search:-ms-input-placeholder      {font-family: 'OpenSans-Regular'; font-size: 15px; padding-left: 25px; color: #afafaf}
+        .catalog-search::-moz-placeholder          {font-family: 'OpenSans-Regular'; font-size: 10px; letter-spacing: 2.5px; color: #000000}
+        .catalog-search:-moz-placeholder           {font-family: 'OpenSans-Regular'; font-size: 10px; letter-spacing: 2.5px; color: #000000}
+        .catalog-search:-ms-input-placeholder      {font-family: 'OpenSans-Regular'; font-size: 10px; letter-spacing: 2.5px; color: #000000}
 
         .header-contacts {
             width: calc((802/1300)*100%);
@@ -183,7 +183,6 @@ body {
                     letter-spacing: 1px;
                     
                 }
-
 
         .shopping-cart-link {
             width: calc((90/1300)*100%);
@@ -215,7 +214,7 @@ body {
     }
 
         .header-bottom__categories-menu {
-            width: calc((1172/1370)*100%);
+            width: 100%;
             height: 100%;
         }
 
@@ -224,7 +223,13 @@ body {
                 height: 100%;
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                align-items: flex-start;
+            }
+
+            .categories-menu-list-item {
+                margin-top: 23px;
+                display: flex;
+                flex-direction: column;
             }
 
             .categories-menu-link {
@@ -233,13 +238,62 @@ body {
                 color: #ffffff;
             }
 
-        .sale-link {
+            .categories-menu-link:hover {
+                cursor: pointer;
+                color: #c1a067;
+            }
+
+            .categories-submenu {
+                position: absolute;
+                /*visibility: hidden;*/
+                display: none !important;
+                width: 255px;
+                height: 180px;
+                margin-top: 35px;
+                margin-left: -35px;
+                padding-top: 25px;
+                padding-left: 29px;
+                padding-bottom: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                box-sizing: border-box;
+                border-top: 4px solid #c1a067;
+                z-index: 150;
+                background-color: #ffffff;
+            }
+
+            .categories-menu-list > li:hover .categories-submenu {
+                display: block;
+                display: flex !important;
+            }
+
+            .categories-menu-list-item:hover ~ .categories-submenu {
+                
+            }
+
+                .categories-submenu__link {
+                    font-family: 'OpenSans-Regular';
+                    font-size: 16px;
+                    color: #000000;
+                }
+
+        .categories-menu-list-sale {
+            margin-top: 0;
             width: calc((160/1370)*100%);
+            box-sizing: border-box;
             height: 100%;
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             background-color: #c16774;
+        }        
+
+        .sale-link {
+            margin-right: 6%;
+            display: inline-block;
+            font-family: 'OpenSans-Regular';
+            font-size: 16px;   
         }
 
 .main {
@@ -827,5 +881,169 @@ body {
 .footer {
     width: 100%;
     height: 480px;
-    background: yellow;
-}  
+    box-sizing: border-box;
+    padding-left: calc((70/1440)*100%);
+    padding-right: calc((70/1440)*100%);
+    background-color: #302a31;
+}
+
+    .footer-content {
+        width: 100%;
+        height: 360px;
+        padding-top: 65px;
+        padding-bottom: 64px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+        border-bottom: 1px solid #3f3a41;
+        background: blue;
+    }
+
+        .footer-content__block {
+            width: calc((310/1300)*100%);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background: green;
+        }
+
+        .footer-content__title {
+            font-family: 'OpenSans-Bold';
+            font-size: 18px;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+
+        .footer-content__link {
+            font-family: 'OpenSans-Regular';
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+
+        .footer-content__link:hover {
+            cursor: pointer;
+            color: #c1a067;
+        }
+
+        .footer-content__list {
+            margin-top: 30px;
+            width: 100%;
+            height: 170px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: flex-start;
+        }
+
+
+        .footer-content__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: flex-start;
+        }
+
+        .footer-content__contacts {
+            height: 215px;
+        }
+
+        .contacts__list {
+            height: 165px;
+        }
+
+        .contacts__social-list {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: flex-start;
+        }
+
+            .contacts__social-list div {
+                font-family: 'OpenSans-Regular';
+                font-size: 12px;
+                letter-spacing: 1px;
+                color: #ffffff;
+            }
+
+        .contacts__connect-list {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: flex-start;
+        }
+
+            .contacts__connect-list-item {
+                font-family: 'OpenSans-Bold'; 
+                font-size: 12px;
+                letter-spacing: 1px;
+                color: #ffffff;
+            }
+
+            .subscription__email {
+                margin-top: 5px;
+                width: 100%;
+                height: 58px;
+                box-sizing: border-box;
+                background-color: transparent;
+                border:none;
+                border-bottom: 2px solid #c1a067;
+            }
+
+            .subscription__email::-webkit-input-placeholder {font-family: 'OpenSans-Regular'; font-size: 11px; letter-spacing: 2px; color: #ffffff} 
+            .subscription__email::-moz-placeholder          {font-family: 'OpenSans-Regular'; font-size: 11px; letter-spacing: 2px; color: #ffffff} 
+            .subscription__email:-moz-placeholder           {font-family: 'OpenSans-Regular'; font-size: 11px; letter-spacing: 2px; color: #ffffff} 
+            .subscription__email:-ms-input-placeholder      {font-family: 'OpenSans-Regular'; font-size: 11px; letter-spacing: 2px; color: #ffffff} 
+    
+            .subscription__btn {
+                margin-top: 20px;
+                margin-left: calc((207/310)*100%);
+                font-family: 'OpenSans-Bold'; 
+                font-size: 14px;
+                letter-spacing: 1px;
+                color: #c1a067;
+            }
+
+            .subscription__join {
+                margin-top: 67px;
+                margin-left: calc((70/310)*100%);
+            }
+
+                .subscription__join-link {
+                    font-family: 'OpenSans-Bold'; 
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    color: #ffffff;
+                }
+
+    .footer-bottom {
+        width: 100%;
+        height: 122px;
+        padding-top: 45px;
+        padding-right: calc((38/1300)*100%);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: flex-start;
+        box-sizing: border-box;
+    }
+
+        .footer-bottom__copyright {
+            font-family: 'OpenSans-Regular'; 
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+        }
+
+        .footer-bottom__design {
+            font-family: 'OpenSans-Regular'; 
+            font-size: 13px;
+            
+            color: #ffffff;
+        }
