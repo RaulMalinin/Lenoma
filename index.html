@@ -57,19 +57,25 @@
                 <div class="lenoma-logo">
                     <img class="lenoma-logo-img" src="img/lenoma-logo.png">
                 </div>
-                <input class="catalog-search" type="search" placeholder="ПОИСК ПО КАТАЛОГУ ТОВАРОВ">
+                <form class="search-form">
+                    <input class="catalog-search" type="search" placeholder="ПОИСК ПО КАТАЛОГУ ТОВАРОВ">
+                    <input class="catalog-search-zoom" type="submit" value="">
+                </form>
                 <div class="header-contacts">
                     <ul class="header-contacts__list">
                         <li class="header-contacts__list-item header-contacts__phone">
                             <span>+ 7 /495/ 542-05-95</span>
                         </li>
                         <li class="header-contacts__list-item header-contacts__callback">
+                            <img src="svg/top-phone-icon.svg">
                             <span>ОБРАТНЫЙ ЗВОНОК</span>
                         </li>
                         <li class="header-contacts__list-item header-contacts__mail">
+                            <img src="svg/top-mail-icon.svg">
                             <span>INFO@LENOMA.RU</span>
                         </li>
                         <li class="header-contacts__list-item header-contacts__working-hours">
+                            <img src="svg/top-working-icon.svg">
                             <span>ПН-ПТ 9.00-21.00</span>
                         </li>
                     </ul>
@@ -289,6 +295,14 @@
                 <a class="advantage__item-link" href="#">СРОЧНАЯ ДОСТАВКА</a>
             </section>
             <section class="main__hits">
+                <button class="arrow-left-btn">
+                    <svg class="arrow-left-svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/>
+                    </svg>
+                </button>
+                <button class="arrow-right-btn">
+                    <svg class="arrow-left-svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/>
+                    </svg>
+                </button>
                 <div class="hits-card main-card">
                     <div class="hits-card__title-wrap main-card__title-wrap">
                         <h2 class="hits-card__title main-card__title">ХИТЫ ПРОДАЖ</h2>
@@ -296,12 +310,15 @@
                     
                     <div class="main-card__products-item-wrap">
                         <div class="hits-card__products-item main-card__products-item">
-                            <img class="products-item__img" src="img/hits1-fleur-narc.png" alt="Fleur Narcotique Preview">
+                            <a class="products-link" href="#">
+                                <img class="products-item__img" src="img/hits1-fleur-narc.png" alt="Fleur Narcotique Preview">
+                            </a>
+                            
                             <div class="products-item__description">  
-                                <a class="products-item__title">FLEUR NARCOTIQUE</a>
-                                <a class="products-item__brend">EX Nihilo</a>
-                                <a class="products-item__type">Парфюмированная вода</a>
-                                <a class="products-item__men-women">Женская</a>
+                                <a class="products-item__title products-link" href="#">FLEUR NARCOTIQUE</a>
+                                <a class="products-item__brend products-link" href="#">EX Nihilo</a>
+                                <a class="products-item__type products-link" href="#">Парфюмированная вода</a>
+                                <a class="products-item__men-women products-link" href="#">Женская</a>
                             </div> 
                             <div class="products-item__items-price">
                                 <div class="items-price__discount items-price__discount-active">8 990 Р.</div>
@@ -310,12 +327,14 @@
                             <a class="products-item__sale products-item__sale-active" href="#">SALE</a> 
                         </div>
                         <div class="hits-card__products-item main-card__products-item">
-                            <img class="products-item__img" src="img/hits2-100love.png" alt="100% Love">
+                            <a class="products-link" href="#">
+                                <img class="products-item__img" src="img/hits2-100love.png" alt="100% Love">
+                            </a>
                             <div class="products-item__description">  
-                                <a class="products-item__title">100% LOVE</a>
-                                <a class="products-item__brend">EX Nihilo</a>
-                                <a class="products-item__type">Парфюмированная вода</a>
-                                <a class="products-item__men-women">Женская</a>
+                                <a class="products-item__title products-link" href="#">100% LOVE</a>
+                                <a class="products-item__brend products-link" href="#">EX Nihilo</a>
+                                <a class="products-item__type products-link" href="#">Парфюмированная вода</a>
+                                <a class="products-item__men-women products-link" href="#">Женская</a>
                             </div> 
                             <div class="products-item__items-price">
                                 <span class="items-price__discount"></span>
@@ -324,12 +343,14 @@
                             <a class="products-item__sale" href="#">SALE</a> 
                         </div>
                         <div class="hits-card__products-item main-card__products-item">
-                            <img class="products-item__img" src="img/hits3-corso-como.png" alt="10 Corso Como">
+                            <a class="products-link" href="#">
+                                <img class="products-item__img" src="img/hits3-corso-como.png" alt="10 Corso Como">
+                            </a>
                             <div class="products-item__description">  
-                                <a class="products-item__title">10 CORSO COMO</a>
-                                <a class="products-item__brend">EX Nihilo</a>
-                                <a class="products-item__type">Парфюмированная вода</a>
-                                <a class="products-item__men-women">Женская</a>
+                                <a class="products-item__title products-link" href="#">10 CORSO COMO</a>
+                                <a class="products-item__brend products-link" href="#">EX Nihilo</a>
+                                <a class="products-item__type products-link" href="#">Парфюмированная вода</a>
+                                <a class="products-item__men-women products-link" href="#">Женская</a>
                             </div> 
                             <div class="products-item__items-price">
                                 <span class="items-price__discount"></span>
@@ -338,12 +359,14 @@
                             <a class="products-item__sale" href="#">SALE</a> 
                         </div>
                         <div class="hits-card__products-item main-card__products-item">
-                            <img class="products-item__img" src="img/hits4-1881-collection.png" alt="1881 Collection">
+                            <a class="products-link" href="#">
+                                <img class="products-item__img" src="img/hits4-1881-collection.png" alt="1881 Collection">
+                            </a>
                             <div class="products-item__description">  
-                                <a class="products-item__title">1881 COLLECTION</a>
-                                <a class="products-item__brend">EX Nihilo</a>
-                                <a class="products-item__type">Парфюмированная вода</a>
-                                <a class="products-item__men-women">Женская</a>
+                                <a class="products-item__title products-link" href="#">1881 COLLECTION</a>
+                                <a class="products-item__brend products-link" href="#">EX Nihilo</a>
+                                <a class="products-item__type products-link" href="#">Парфюмированная вода</a>
+                                <a class="products-item__men-women products-link" href="#">Женская</a>
                             </div> 
                             <div class="products-item__items-price">
                                 <span class="items-price__discount"></span>
@@ -354,24 +377,32 @@
                         
                     </div> 
                 </div>
-                <button class="arrow-left">
-                    <img class="arrow-left__img" src="svg/arrow-left.svg">
-                </button>
+                
             </section>
             <section class="main__new-products">
+                <button class="arrow-left-btn">
+                    <svg class="arrow-left-svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/>
+                    </svg>
+                </button>
+                <button class="arrow-right-btn">
+                    <svg class="arrow-left-svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/>
+                    </svg>
+                </button>
                 <div class="new-products-card main-card">
-                    <div class="new-products-card__title-wrap main-card__title-wrap">
+                    <div class="new-products-card__title-wrap main-card__title-wrap">    
                         <h2 class="new-products-card__title main-card__title">НОВИНКИ</h2>
                     </div>
                     
                     <div class="main-card__products-item-wrap">
                         <div class="new-products-card__products-item main-card__products-item">
-                            <img class="products-item__img" src="img/new1-ainger.png" alt="Ainger Black">
+                            <a class="products-link" href="#">
+                                <img class="products-item__img" src="img/new1-ainger.png" alt="Ainger Black">
+                            </a>
                             <div class="products-item__description">  
-                                <a class="products-item__title">AIGNER BLACK</a>
-                                <a class="products-item__brend">EX Nihilo</a>
-                                <a class="products-item__type">Парфюмированная вода</a>
-                                <a class="products-item__men-women">Женская</a>
+                                <a class="products-item__title products-link" href="#">AIGNER BLACK</a>
+                                <a class="products-item__brend products-link" href="#">EX Nihilo</a>
+                                <a class="products-item__type products-link" href="#">Парфюмированная вода</a>
+                                <a class="products-item__men-women products-link" href="#">Женская</a>
                             </div> 
                             <div class="products-item__items-price">
                                 <div class="items-price__discount"></div>
@@ -380,12 +411,14 @@
                             <a class="products-item__sale products-item__sale" href="#">SALE</a> 
                         </div>
                         <div class="new-products-card__products-item main-card__products-item">
-                            <img class="products-item__img" src="img/new2-icedrops.png" alt="Ainger Black Icedrops">
+                            <a class="products-link" href="#">
+                                <img class="products-item__img" src="img/new2-icedrops.png" alt="Ainger Black Icedrops">
+                            </a>  
                             <div class="products-item__description">  
-                                <a class="products-item__title">AIGNER BLACK ICEDROPS</a>
-                                <a class="products-item__brend">EX Nihilo</a>
-                                <a class="products-item__type">Парфюмированная вода</a>
-                                <a class="products-item__men-women">Женская</a>
+                                <a class="products-item__title products-link" href="#">AIGNER BLACK ICEDROPS</a>
+                                <a class="products-item__brend products-link" href="#">EX Nihilo</a>
+                                <a class="products-item__type products-link" href="#">Парфюмированная вода</a>
+                                <a class="products-item__men-women products-link" href="#">Женская</a>
                             </div> 
                             <div class="products-item__items-price">
                                 <span class="items-price__discount"></span>
@@ -394,12 +427,14 @@
                             <a class="products-item__sale" href="#">SALE</a> 
                         </div>
                         <div class="new-products-card__products-item main-card__products-item">
-                            <img class="products-item__img" src="img/new3-fleur.png" alt="Fleur Narcotique">
+                            <a class="products-link" href="#">
+                                <img class="products-item__img" src="img/new3-fleur.png" alt="Fleur Narcotique">
+                            </a>
                             <div class="products-item__description">  
-                                <a class="products-item__title">FLEUR NARCOTIQUE</a>
-                                <a class="products-item__brend">EX Nihilo</a>
-                                <a class="products-item__type">Парфюмированная вода</a>
-                                <a class="products-item__men-women">Женская</a>
+                                <a class="products-item__title products-link" href="#">FLEUR NARCOTIQUE</a>
+                                <a class="products-item__brend products-link" href="#">EX Nihilo</a>
+                                <a class="products-item__type products-link" href="#">Парфюмированная вода</a>
+                                <a class="products-item__men-women products-link" href="#">Женская</a>
                             </div> 
                             <div class="products-item__items-price">
                                 <span class="items-price__discount"></span>
@@ -408,12 +443,14 @@
                             <a class="products-item__sale" href="#">SALE</a> 
                         </div>
                         <div class="new-products-card__products-item main-card__products-item">
-                            <img class="products-item__img" src="img/new4-aire.png" alt="AIRE LOCO">
+                            <a class="products-link" href="#">
+                                <img class="products-item__img" src="img/new4-aire.png" alt="AIRE LOCO">
+                            </a>
                             <div class="products-item__description">  
-                                <a class="products-item__title">AIRE LOCO</a>
-                                <a class="products-item__brend">EX Nihilo</a>
-                                <a class="products-item__type">Парфюмированная вода</a>
-                                <a class="products-item__men-women">Женская</a>
+                                <a class="products-item__title products-link" href="#">AIRE LOCO</a>
+                                <a class="products-item__brend products-link" href="#">EX Nihilo</a>
+                                <a class="products-item__type products-link" href="#">Парфюмированная вода</a>
+                                <a class="products-item__men-women products-link" href="#">Женская</a>
                             </div> 
                             <div class="products-item__items-price">
                                 <span class="items-price__discount"></span>
@@ -426,18 +463,28 @@
                 </div>        
             </section>
             <section class="main__special-offer">
+                <button class="arrow-left-btn__special">
+                    <svg class="arrow-left-svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/>
+                    </svg>
+                </button>
+                <button class="arrow-right-btn__special">
+                    <svg class="arrow-left-svg" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24"><path d="M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z"/>
+                    </svg>
+                </button>                
                 <div class="special-offer-card main-card">
                     <div class="special-offer-card__title-wrap main-card__title-two-line-wrap">
                         <h2 class="special-offer-card__title main-card__title-two-line"><span>СПЕЦИАЛЬНЫЕ</span><br><span>ПРЕДЛОЖЕНИЯ</span></h2>
                     </div>
                     <div class="special-offer-card__products-item-wrap main-card__products-item-wrap">
                         <div class="special-offer-card__products-item main-card__products-item">
-                            <img class="products-item__img" src="img/offer1-allways.png" alt="8 ALWAYS PRETTY">
+                            <a class="products-link" href="#">
+                                <img class="products-item__img" src="img/offer1-allways.png" alt="8 ALWAYS PRETTY">
+                            </a>
                             <div class="products-item__description">  
-                                <a class="products-item__title">8 ALWAYS PRETTY</a>
-                                <a class="products-item__brend">EX Nihilo</a>
-                                <a class="products-item__type">Парфюмированная вода</a>
-                                <a class="products-item__men-women">Женская</a>
+                                <a class="products-item__title products-link" href="#">8 ALWAYS PRETTY</a>
+                                <a class="products-item__brend products-link" href="#">EX Nihilo</a>
+                                <a class="products-item__type products-link" href="#">Парфюмированная вода</a>
+                                <a class="products-item__men-women products-link" href="#">Женская</a>
                             </div> 
                             <div class="products-item__items-price">
                                 <div class="items-price__discount"></div>
@@ -446,12 +493,14 @@
                             <a class="products-item__sale products-item__sale" href="#">SALE</a> 
                         </div>
                         <div class="special-offer-card__products-item main-card__products-item">
-                            <img class="products-item__img" src="img/offer2-fan-di-fende.png" alt="FAN DI FENDI EXTREME">
+                            <a class="products-link" href="#">
+                                <img class="products-item__img" src="img/offer2-fan-di-fende.png" alt="FAN DI FENDI EXTREME">
+                            </a>
                             <div class="products-item__description">  
-                                <a class="products-item__title">FAN DI FENDI EXTREME</a>
-                                <a class="products-item__brend">EX Nihilo</a>
-                                <a class="products-item__type">Парфюмированная вода</a>
-                                <a class="products-item__men-women">Женская</a>
+                                <a class="products-item__title products-link" href="#">FAN DI FENDI EXTREME</a>
+                                <a class="products-item__brend products-link" href="#">EX Nihilo</a>
+                                <a class="products-item__type products-link" href="#">Парфюмированная вода</a>
+                                <a class="products-item__men-women products-link" href="#">Женская</a>
                             </div> 
                             <div class="products-item__items-price">
                                 <span class="items-price__discount"></span>
@@ -460,12 +509,14 @@
                             <a class="products-item__sale" href="#">SALE</a> 
                         </div>
                         <div class="special-offer-card__products-item main-card__products-item">
-                            <img class="products-item__img" src="img/offer3-tease.png" alt="TEASE LIMITED EDITION EAU DE PARFUM">
+                            <a class="products-link" href="#">
+                                <img class="products-item__img" src="img/offer3-tease.png" alt="TEASE LIMITED EDITION EAU DE PARFUM">
+                            </a>
                             <div class="products-item__description">  
-                                <a class="products-item__title">TEASE LIMITED EDITION EAU DE PARFUM</a>
-                                <a class="products-item__brend">EX Nihilo</a>
-                                <a class="products-item__type">Парфюмированная вода</a>
-                                <a class="products-item__men-women">Женская</a>
+                                <a class="products-item__title products-link" href="#">TEASE LIMITED EDITION EAU DE PARFUM</a>
+                                <a class="products-item__brend products-link" href="#">EX Nihilo</a>
+                                <a class="products-item__type products-link" href="#">Парфюмированная вода</a>
+                                <a class="products-item__men-women products-link" href="#">Женская</a>
                             </div> 
                             <div class="products-item__items-price">
                                 <span class="items-price__discount"></span>
@@ -474,12 +525,14 @@
                             <a class="products-item__sale" href="#">SALE</a> 
                         </div>
                         <div class="special-offer-card__products-item main-card__products-item">
-                            <img class="products-item__img" src="img/offer4-001.png" alt="001">
+                            <a class="products-link" href="#">
+                                <img class="products-item__img" src="img/offer4-001.png" alt="001">
+                            </a>
                             <div class="products-item__description">  
-                                <a class="products-item__title">001</a>
-                                <a class="products-item__brend">EX Nihilo</a>
-                                <a class="products-item__type">Парфюмированная вода</a>
-                                <a class="products-item__men-women">Женская</a>
+                                <a class="products-item__title products-link" href="#">001</a>
+                                <a class="products-item__brend products-link" href="#">EX Nihilo</a>
+                                <a class="products-item__type products-link" href="#">Парфюмированная вода</a>
+                                <a class="products-item__men-women products-link" href="#">Женская</a>
                             </div> 
                             <div class="products-item__items-price">
                                 <span class="items-price__discount"></span>
@@ -838,14 +891,27 @@
                     <ul class="contacts__list footer-content__list">
                         <ul class="contacts__list-item contacts__social-list">
                             <li class="contacts__social-list">
-                                <div>Мы доступны также</div>
-                                <div>В рабочее время с 9.00 до 21.00</div>
+                                <div class="social-list__messenger">
+                                    <span>Мы доступны также</span>
+                                    <a class="whatsapp-link" href="#"><img src="svg/footer-whatsapp-icon.svg"></a>
+                                    <a class="viber-link" href="#"><img src="svg/footer-viber-icon.svg"></a>
+                                </div>
+                                <div class="working-hours">В рабочее время с 9.00 до 21.00</div>
                             </li>
                         </ul>
                         <ul class="contacts__list-item contacts__connect-list">
-                            <li class="contacts__connect-list-item">ОБРАТНЫЙ ЗВОНОК</li>
-                            <li class="contacts__connect-list-item">INFO@LENOMA.RU</li>
-                            <li class="contacts__connect-list-item">SKYPE: LENOMA.RU</li>
+                            <li class="contacts__connect-list-item">
+                                <img src="svg/footer-callback-icon.svg">
+                               <a class="connect-link connect-link__callback" href="#">ОБРАТНЫЙ ЗВОНОК</a> 
+                            </li>
+                            <li class="contacts__connect-list-item">
+                                <img src="svg/footer-mail-icon.svg">
+                                <a class="connect-link connect-link__mail" href="#">INFO@LENOMA.RU </a>
+                            </li>
+                            <li class="contacts__connect-list-item">
+                                <img src="svg/footer-skype-icon.svg">
+                                <a class="connect-link connect-link__skype" href="#">SKYPE: LENOMA.RU</a>
+                            </li>
                         </ul>    
                     </ul>
                 </div>
@@ -857,7 +923,12 @@
                     </form>    
                         
                     <div class="subscription__join">
-                        <a class="subscription__join-link" href="#">присоединяйтесь к нам</a>
+                        <div class="subscription__join-wrap">
+                            <a class="subscription__join-link-icon" href="#">
+                                <img src="svg/footer-instagram-icon.svg">
+                            </a>
+                        </div>
+                        <a class="subscription__join-link" href="#">ПРИСОЕДИНЯЙТЕСЬ К НАМ</a>
                     </div>
                 </div>
                 
@@ -865,7 +936,10 @@
             </section>
             <section class="footer-bottom">
                 <div class="footer-bottom__copyright">© 2017. Lenoma.ru</div>
-                <div class="footer-bottom__design">Разработка и поддержка — «ЭВРИКА»</div>
+                <div class="footer-bottom__design">
+                    <img src="svg/eureka.svg">
+                    <a class="footer-bottom__design-link" href="#">Разработка и поддержка — «ЭВРИКА»</a>    
+                </div>
             </section>
         </footer>
       
