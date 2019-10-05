@@ -281,6 +281,7 @@ body {
                 }
             
             .header-contacts__callback {
+                position: relative;
                 width: 170px;
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -288,7 +289,21 @@ body {
                 -webkit-box-pack: justify;
                     -ms-flex-pack: justify;
                         justify-content: space-between;
+                        
             }
+
+
+            .header-contacts__callback::before {
+                display: block;
+                content: "fsdfs";
+                position: absolute;
+                left: 0;
+                
+                width: 25px;
+                height: 25px;
+                background-image: url("./svg/top-phone-icon.svg")
+            }
+
 
             .header-contacts__mail {
                 width: 170px;
@@ -323,13 +338,17 @@ body {
             -ms-flex-line-pack: justify;
                 align-content: space-between;
             background-color: #c1a067;
+            background-image: url("./img/shopping-cart-icon.png");
+            background-position: 50% 45%;
+            background-repeat: no-repeat;
+            background-size: 32px 42px;
         }
 
             .shopping-cart-numbers {
                 margin-top: 9%;
-                margin-left: 35%;
+                margin-left: 68%;
                 color: #ffffff;
-                font-size: 12px;
+                font-size: 10px;
             }
 
             
