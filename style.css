@@ -33,7 +33,6 @@ body {
     display: flex;
     flex-direction: column;
     align-content: center;
-    background: red;
 }
 
 .header {
@@ -41,7 +40,6 @@ body {
     height: 240px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-            background: yellow;
 }
 
     .header-top {
@@ -528,7 +526,6 @@ body {
             box-sizing: border-box;
     padding-left: calc((70/1440)*100%);
     padding-right: calc((70/1440)*100%);
-    background: green;
 }
 
     .main__slider {
@@ -566,15 +563,10 @@ body {
                 margin-top: 150px;
                 margin-right: calc((-330/1300)*100%);
                 font-family: 'OpenSans-Bold';
-                /*font-size: 40px;
+                font-size: 40px;
                 letter-spacing: 6px;
-                line-height: 62px;*/
-                /*font-size: calc((250/100)*100%);*/
-                font-size: 2.65vw;
-                letter-spacing: 0.5vw;
-                line-height: 4.2vw;
+                line-height: 62px;
                 z-index: 100;
-                background: red;
             }
 
             .slider__more-detailed {
@@ -582,10 +574,8 @@ body {
                 height: 35px;
                 margin-top: 84px;
                 font-family: 'OpenSans-Bold';
-                /*font-size: 12px;
-                letter-spacing: 1.5px;*/
-                font-size: 0.75vw;
-                letter-spacing: 0.15vw;
+                font-size: 12px;
+                letter-spacing: 1.5px;
                 color: #c1a067;
                 border-bottom: 2px solid #c1a067;
             }
@@ -604,9 +594,8 @@ body {
                 -webkit-box-align: center;
                     -ms-flex-align: center;
                         align-items: center;
-                /*background-image: url('./img/slider-background.png');*/
+                background-image: url('./img/slider-background.png');
                 background-size: cover;
-                background: blue;
             }
 
                 .slider__preview-link {
@@ -667,7 +656,6 @@ body {
                     }
 
                     .advice-link:hover {
-                        
                         color: #c16774;
                     }                     
 
@@ -741,7 +729,6 @@ body {
             font-family: 'OpenSans-Regular'; 
             font-size: 11px;
             letter-spacing: 2px;
-            
             color: #000000;
         }
 
@@ -1090,7 +1077,6 @@ body {
                 -webkit-box-pack: justify;
                     -ms-flex-pack: justify;
                         justify-content: space-between;
-                        background: firebrick;
             }
 
                 .top-brends__list {
@@ -1121,7 +1107,6 @@ body {
                         -ms-flex-pack: justify;
                             justify-content: space-between;
                     margin-left: 110px;
-                    background: yellow;
                 }
 
                     .all-brends__list {
